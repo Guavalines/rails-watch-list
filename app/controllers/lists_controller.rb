@@ -14,8 +14,22 @@ class ListsController < ApplicationController
     else
       render :new
     end
+  end
 
+  def edit
+    @list = List.find(params[:id])
+  end
 
+  def show
+    @list = List.find(params[:id])
+  end
+
+  def update
+    @list = List.find(params[:id])
+    @list.update(list_params)
+
+    # no need for app/views/restaurants/update.html.erb
+    redirect_to list_path(@list)
   end
 
   private

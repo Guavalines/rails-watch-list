@@ -1,7 +1,9 @@
-<h1>Movies List</h1>
-<h2>Choose One:</h2>
+<h1>Movies Lists</h1>
 <ol>
   <% @lists.each do |list| %>
-    <li><%= list.name %></li>
+    <li>
+      <%= list.name %>
+      <%= link_to 'Details', list_path(list.id) %>
+    </li>
   <% end %>
 </ol>
