@@ -1,4 +1,4 @@
-# Watch List 
+# WATCH LIST
 
 - Users can create their own custom categories.
 - Users can see their favorite categories and add their favorite movies from a Database (Using Movie API).
