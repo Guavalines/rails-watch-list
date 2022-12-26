@@ -15,3 +15,10 @@
 ![Ruby on Rails](https://img.shields.io/badge/Ruby_on_Rails-CC0000?style=for-the-badge&logo=ruby-on-rails&logoColor=white) 6.1.4.6
 
 ### Setup
+
+ git clone git@github.com:guavalines/rails-watch-list.git
+ cd rails-watch-list
+ rails db:create db:migrate db:seed:replant
+ bundle install
+ yarn install
+ rails server
