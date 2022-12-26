@@ -16,11 +16,13 @@
 
 ### Setup
 
+```
  git clone git@github.com:guavalines/rails-watch-list.git
  cd rails-watch-list
  rails db:create db:migrate db:seed:replant
  bundle install
  yarn install
  rails server
+```
 
 Open you browser and visit localhost:3000
