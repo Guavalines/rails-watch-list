@@ -1,6 +1,6 @@
 # WATCH LIST
 
-Watch List is a 3-model app is a many to many relationship (N:N)
+Watch List is a 3-model app with a many to many relationship (N:N), with bookmarks as its join table.
 
 
 ![Watch List Schema](https://user-images.githubusercontent.com/100665876/210877301-71272343-532e-42f7-8449-1af1b1e182fe.jpeg)
