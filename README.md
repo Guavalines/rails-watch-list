@@ -2,6 +2,9 @@
 
 Watch List is a 3-model app is a many to many relationship (N:N)
 
+
+![Watch List Schema](https://user-images.githubusercontent.com/100665876/210877301-71272343-532e-42f7-8449-1af1b1e182fe.jpeg)
+
 ## Main Features
 
 - Users can create their own custom categories.
