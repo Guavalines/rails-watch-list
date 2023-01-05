@@ -81,8 +81,8 @@ GEM
     erubi (1.10.0)
     execjs (2.7.0)
     ffi (1.15.5)
-    font-awesome-sass (5.15.1)
-      sassc (>= 1.11)
+    font-awesome-sass (6.2.1)
+      sassc (~> 2.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.10.0)
@@ -216,7 +216,7 @@ DEPENDENCIES
   autoprefixer-rails (= 10.2.5)
   bootsnap (>= 1.4.4)
   byebug
-  font-awesome-sass (~> 5.15)
+  font-awesome-sass (~> 6.1)
   jbuilder (~> 2.7)
   listen (~> 3.3)
   pg (~> 1.1)
@@ -226,6 +226,7 @@ DEPENDENCIES
   rails-controller-testing
   rspec-rails
   sass-rails (>= 6)
+  sassc-rails
   simple_form!
   spring
   turbolinks (~> 5)
@@ -237,4 +238,4 @@ RUBY VERSION
    ruby 3.0.3p157
 
 BUNDLED WITH
-   2.2.32
+   2.3.26
