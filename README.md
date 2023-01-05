@@ -10,6 +10,8 @@ Watch List is a 3-model app with a many to many relationship (N:N), with bookmar
 - Users can create their own custom categories.
 - Users can see their favorite categories and add their favorite movies from a Database (Using Movie API).
 - Users can create list of their favorite movies.
+- Parsing an API
+- Validations
 
 
 ## Initialize these before starting the app:
