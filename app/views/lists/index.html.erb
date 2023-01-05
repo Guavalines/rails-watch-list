@@ -1,9 +1,13 @@
-<h1>Movies Lists</h1>
-<ol>
-  <% @lists.each do |list| %>
-    <li>
-      <%= list.name %>
-      <%= link_to 'Details', list_path(list.id) %>
-    </li>
-  <% end %>
-</ol>
+<div class="container mt-5">
+  <h1>Movies Lists</h1>
+  <ol>
+    <% @lists.each do |list| %>
+      <li>
+        <%= list.name %>
+        <%= link_to 'Details', list_path(list.id) %>
+      </li>
+    <% end %>
+  </ol>
+
+  <%= link_to 'Home', root_path %>
+</div>

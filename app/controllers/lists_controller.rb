@@ -3,14 +3,19 @@ class ListsController < ApplicationController
     @lists = List.all
   end
 
+  def show
+    @list = List.find(params[:id])
+  end
+
   def new
     @list = List.new
   end
 
   def create
     @list = List.create(list_params)
+
     if @list.save
-      render_to list_path(@list)
+      redirect_to root_path, notice: 'List was successfully created.'
     else
       render :new
     end
@@ -20,9 +25,7 @@ class ListsController < ApplicationController
     @list = List.find(params[:id])
   end
 
-  def show
-    @list = List.find(params[:id])
-  end
+
 
   def update
     @list = List.find(params[:id])
@@ -35,7 +38,7 @@ class ListsController < ApplicationController
   private
 
   def list_params
-    params.require(list).permit(:name)
+    params.require(@list).permit(:name)
   end
 
 end
