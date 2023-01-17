@@ -21,18 +21,13 @@ class ListsController < ApplicationController
     end
   end
 
-  def edit
+
+
+  def destroy
     @list = List.find(params[:id])
-  end
+    @list.destroy
 
-
-
-  def update
-    @list = List.find(params[:id])
-    @list.update(list_params)
-
-    # no need for app/views/restaurants/update.html.erb
-    redirect_to list_path(@list)
+    redirect_to root_path, notice: 'List was successfully destroyed.'
   end
 
   private
