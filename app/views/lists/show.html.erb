@@ -1,18 +1,18 @@
-<div class="container mt-5">
+ <div class="container mt-5">
   <h1>Details</h1>
   <h2><%= @list.name %></h2>
 
-  <%= form_for(@list) do |f| %>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-    <%= f.submit %>
-  <% end %>
+<%= form_for(@list) do |f| %>
+ <%= f.label :name %>
+  <%= f.text_field :name %>
+<%= f.submit %>
+<% end %>
 
-  <%= form_for(@list) do |f| %>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-    <%= f.submit %>
-  <% end %>
+ <%= form_for(@list) do |f| %>
+   <%= f.label :name %>
+   <%= f.text_field :name %>
+   <%= f.submit %>
+ <% end %>
 
-  <%= link_to 'Return to previous page', lists_path %>
-</div>
+<%= link_to 'Return to previous page', root_path %>
+<% </div> %>
