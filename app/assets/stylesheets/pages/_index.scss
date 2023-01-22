@@ -1,22 +1,69 @@
 // Import page-specific CSS files here.
 @import "home";
 
-.bg-image {
-  max-width: 400px;
-}
-
 .banner {
   background-size: cover;
   background-position: center;
   padding: 200px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   }
 
 .banner h1 {
   color: white;
+  /* Text styles */
+  font-size: 5em;
+
+  /* Margins */
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+
+.container {
+  width: 900px;
+  margin: auto;
   }
 
-.banner p {
-  color: white;
-  opacity: .7;
-  font-size: 20px;
+.text-center {
+  text-align: center;
+  }
+h1, h2, h3, h4 {
+  font-family: Poppins;
+  }
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  }
+
+.card {
+  width: 200px;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgb(230,230,230);
+  text-align: center;
+  padding: 20px;
+  border: 1px solid rgb(230,230,230);
+  }
+
+.card img {
+  width: 150px;
+  }
+
+.card p {
+  opacity: .5;
+  }
+
+.footer {
+  text-align: center;
+  padding: 60px;
+  background-color: #2c2b2b;
+  }
+
+.footer a {
+  font-size: 30px;
+  color: #1EDD88;
   }

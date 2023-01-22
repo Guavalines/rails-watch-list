@@ -1,8 +1,11 @@
-  <div class="banner" style="background-image: url(images/rebelwithoutacause.jpg);">
-    <div class="container">
-      <h1>Watch List</h1>
-    </div>
+<div>
+<div class="banner" style="background-image: url(<%= asset_path('rebelwithoutacause.jpg') %>)">
+  <div class="container">
+    <h1>My Lists</h1>
   </div>
+<div>
+</div>
+
 
 <div class="container mt-5">
   <h1>My Lists</h1>
@@ -17,3 +20,42 @@
 
   <%= link_to 'Home', root_path %>
 </div>
+
+  <!-- code a "How it works" section -->
+  <div class="container">
+    <h2 class="text-center">How it works</h2>
+    <div class="cards">
+
+      <div class="card">
+        <img src="images/apply.svg" alt="">
+        <h4>Apply</h4>
+        <p>First apply to one of our campuses around the world.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/learn.svg" alt="">
+        <h4>Learn to code</h4>
+        <p>Learn Ruby on Rails, Javascript, SQL &amp; much more!</p>
+      </div>
+
+      <div class="card">
+        <img src="images/product.svg" alt="">
+        <h4>Build products</h4>
+        <p>Finally you will be able to bring your ideas to life.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- code a footer -->
+
+  <div class="footer">
+    <div class="links">
+      <a href="#"><i class="fab fa-fw fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-fw fa-github"></i></a>
+      <a href="#"><i class="fab fa-fw fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-fw fa-instagram"></i></a>
+      <p>This website was coded with <i class="fas fa-heart"></i> at UX Institute.</p>
+
+    </div>
+  </div>
