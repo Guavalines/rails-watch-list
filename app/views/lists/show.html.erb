@@ -11,3 +11,22 @@
 
 <%= link_to 'Return to previous page', root_path %>
 </div>
+
+<div class="category-cards d-flex flex-wrap">
+  <% @list.bookmarks.each do |bookmark| %>
+    <div class="flip-card m-2">
+      <div class="flip-card-inner">
+        <div class="flip-card-front" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('#')">
+        </div>
+        <div class="flip-card-back">
+          <%= link_to "delete", bookmark_path(bookmark), method: :delete,  data: { confirm: 'Are you sure?' }, class: "category-remove-link" %>
+          <div class="card-body">
+            <h4 class="card-title"><%= bookmark.movie.title %></h4>
+            <p><%= bookmark.movie.overview %></p>
+            <p class="card-text">-<%= bookmark.comment %> ❞</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
