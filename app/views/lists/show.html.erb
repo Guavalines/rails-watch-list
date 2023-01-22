@@ -1,5 +1,5 @@
  <div class="container mt-5">
-  <h1>Details</h1>
+  <h1><%= @list.name %> Details </h1>
 
 <div class = "category-banner d-flex align-items-center">
   <div class="banner-buttons">
@@ -7,7 +7,6 @@
     <%= link_to "My Lists", root_path, class: "btn btn-secondary back-button-addons"%>
   </div>
 </div>
-  <h1><%= @list.name %></h1>
 
 <%= link_to 'Return to previous page', root_path %>
 </div>
