@@ -1,18 +1,13 @@
  <div class="container mt-5">
   <h1>Details</h1>
-  <h2><%= @list.name %></h2>
 
-<%= form_for(@list) do |f| %>
- <%= f.label :name %>
-  <%= f.text_field :name %>
-<%= f.submit %>
-<% end %>
-
- <%= form_for(@list) do |f| %>
-   <%= f.label :name %>
-   <%= f.text_field :name %>
-   <%= f.submit %>
- <% end %>
+<div class = "category-banner d-flex align-items-center">
+  <div class="banner-buttons">
+    <%= link_to "Add Bookmark", new_list_bookmark_path(@list), class: "btn btn-secondary addbookmark-button-addons" %>
+    <%= link_to "My Lists", root_path, class: "btn btn-secondary back-button-addons"%>
+  </div>
+</div>
+  <h1><%= @list.name %></h1>
 
 <%= link_to 'Return to previous page', root_path %>
 </div>
