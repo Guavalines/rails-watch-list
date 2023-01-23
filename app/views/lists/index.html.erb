@@ -11,6 +11,7 @@
     <h1>My Lists</h1>
   <ol>
     <% @lists.each do |list| %>
+      <div class="list-card" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,1)), url('<%= cl_image_path list.photo.key, height: 300, crop: :fill %>')">
     <li>
         <%= list.name %>
         <%= link_to 'Details', list_path(list.id) %>

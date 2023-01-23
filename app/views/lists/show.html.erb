@@ -6,6 +6,7 @@
     <%= link_to "Add Bookmark", new_list_bookmark_path(@list), class: "btn btn-secondary addbookmark-button-addons" %>
     <%= link_to "My Lists", root_path, class: "btn btn-secondary back-button-addons"%>
   </div>
+  <img src="<%= cl_image_path @list.photo.key %>" alt="list-image">
 </div>
 
 <%= link_to 'Return to previous page', root_path %>
