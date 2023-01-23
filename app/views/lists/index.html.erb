@@ -7,15 +7,16 @@
 
 
 
-<div class="container mt-5">
-    <h1>My Lists</h1>
-  <ol>
+<div class="main-container">
+  <div class="list-cards">
     <% @lists.each do |list| %>
       <div class="list-card" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,1)), url('<%= cl_image_path list.photo.key, height: 300, crop: :fill %>')">
-    <li>
-        <%= list.name %>
-        <%= link_to 'Details', list_path(list.id) %>
-   </li>
+        <%= link_to list.name, list_path(list), class:"link" %>
+        <%= link_to '&times;'.html_safe, list_path(list),  method: :delete, class: "card-remove-link", data: { confirm: 'Are you sure?' } %>
+      </div>
     <% end %>
- </ol>
+    <div class="list-card bg-dark opacity-100">
+      <%= link_to "Add List", new_list_path, class:"add_list_link" %>
+    </div>
+  </div>
 </div>
