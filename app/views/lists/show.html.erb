@@ -16,7 +16,7 @@
   <% @list.bookmarks.each do |bookmark| %>
     <div class="flip-card m-2">
       <div class="flip-card-inner">
-        <div class="flip-card-front" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('#')">
+        <div class="flip-card-front" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path bookmark.movie.poster_url, height: 300, crop: :fill %>')">
         </div>
         <div class="flip-card-back">
           <%= link_to "delete", bookmark_path(bookmark), method: :delete,  data: { confirm: 'Are you sure?' }, class: "category-remove-link" %>
@@ -24,6 +24,7 @@
             <h4 class="card-title"><%= bookmark.movie.title %></h4>
             <p><%= bookmark.movie.overview %></p>
             <p class="card-text">-<%= bookmark.comment %> ❞</p>
+            <h5>Audience Rating: <%= bookmark.movie.rating %></h5>
           </div>
         </div>
       </div>
