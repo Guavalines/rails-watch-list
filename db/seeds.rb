@@ -24,27 +24,38 @@
 # end
 
 # ------------------------FAKER------------------
-Movie.delete_all
+# Movie.delete_all
 
-NUM_MOVIES = 10
+# NUM_MOVIES = 10
 
-NUM_MOVIES.times do
-  title = Faker::Movie.title
-  overview = Faker::Movie.quote
-  Movie.create(title: title, overview: overview)
-end
+# NUM_MOVIES.times do
+#   title = Faker::Movie.title
+#   overview = Faker::Movie.quote
+#   Movie.create(title: title, overview: overview)
+# end
 
 # --------------------FAKER----------------
 
-# require 'net/http'
-# require 'json'
+require "open-uri"
+require "json"
 
-# 20.times do |i|
-#   url = "http://tmdb.lewagon.com/movie/#{i + 1}"
-#   uri = URI(url)
-#   response = Net::HTTP.get(uri)
-#   repos = JSON.parse(response)
-#   # IMAGE FETCH PROCESS
-#   poster_url = "https://image.tmdb.org/t/p/w300#{repos['poster_path']}"
-#   Movie.create(title: repos["title"], overview: repos["overview"], rating: repos["popularity"], poster_url: poster_url)
-# end
+puts "Cleaning up database..."
+Movie.destroy_all
+puts "Database cleaned"
+
+url = "http://tmdb.lewagon.com/movie/top_rated"
+10.times do |i|
+  puts "Importing movies from page #{i + 1}"
+  movies = JSON.parse(URI.open("#{url}?page=#{i + 1}").read)['results']
+  movies.each do |movie|
+    puts "Creating #{movie['title']}"
+    base_poster_url = "https://image.tmdb.org/t/p/original"
+    Movie.create(
+      title: movie["title"],
+      overview: movie["overview"],
+      poster_url: "#{base_poster_url}#{movie["backdrop_path"]}",
+      rating: movie["vote_average"]
+    )
+  end
+end
+puts "Movies created"
