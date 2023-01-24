@@ -1,0 +1,17 @@
+.banner {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  color: white;
+  }
+
+.banner h1 {
+  color: white;
+  font-size: 5em;
+  margin-top: 60px;
+  margin-bottom: 0.5em;
+}
