@@ -1,0 +1,42 @@
+.card-img-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.category-cards {
+  overflow: hidden;
+  background: white;
+  box-shadow: 5px 10px #888888;
+}
+
+.list-cards {
+  display: grid;
+  flex-grow: 1;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+  margin: 10px;
+}
+
+.list-card {
+  position: relative;
+  opacity: 0.7;
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 22px;
+  color: white;
+  font-weight: bolder;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+
+  &:hover {
+    transition: 0.1s ease;
+    opacity: 1;
+  }
+}
