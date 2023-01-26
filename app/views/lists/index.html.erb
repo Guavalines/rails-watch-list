@@ -1,22 +1,24 @@
 <div class = "banner">
   <%= image_tag 'cinema.jpg', alt: "Cinema", class: "background-image" %>
    <div class="card-img-overlay">
-    <h1>My Lists</h1>
+    <h1>Save any movie</h1>
   </div>
 </div>
 
+<div class="container mt-5">
+  <h1>My Lists</h1>
 
-
-<div class="main-container">
-  <div class="list-cards">
-    <% @lists.each do |list| %>
-      <div class="list-card" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,1)), url('<%= cl_image_path list.photo.key, height: 300, crop: :fill %>')">
-        <%= link_to list.name, list_path(list), class:"link" %>
-        <%= link_to '&times;'.html_safe, list_path(list),  method: :delete, class: "card-remove-link", data: { confirm: 'Are you sure?' } %>
+  <div class="main-container">
+    <div class="list-cards">
+      <% @lists.each do |list| %>
+        <div class="list-card" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,1)), url('<%= cl_image_path list.photo.key, height: 300, crop: :fill %>')">
+          <%= link_to list.name, list_path(list), class:"link" %>
+          <%= link_to '&times;'.html_safe, list_path(list),  method: :delete, class: "card-remove-link", data: { confirm: 'Are you sure?' } %>
+        </div>
+      <% end %>
+      <div class="list-card bg-dark opacity-100">
+        <%= link_to "Add List", new_list_path, class:"add_list_link" %>
       </div>
-    <% end %>
-    <div class="list-card bg-dark opacity-100">
-      <%= link_to "Add List", new_list_path, class:"add_list_link" %>
     </div>
   </div>
 </div>
