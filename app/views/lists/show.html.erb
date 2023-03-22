@@ -1,16 +1,19 @@
 <div class="container mt-5">
-  <h1><%= @list.name %> Details </h1>
+  <div class="category-banner" style="position: relative;">
+    <h1 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1; color: white;"><%= @list.name %></h1>
+    <img src="<%= cl_image_path @list.photo.key %>" alt="list-image" width="75%" height="75%">
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 0;"></div>
+  </div>
 
-<div class = "category-banner">
   <div class="banner-buttons">
     <%= link_to "Add Bookmark", new_list_bookmark_path(@list), class: "btn btn-secondary addbookmark-button-addons" %>
     <%= link_to "My Lists", root_path, class: "btn btn-secondary back-button-addons"%>
   </div>
-  <img src="<%= cl_image_path @list.photo.key %>" alt="list-image" width="50%" height="50%">
+
+  <%= link_to 'Return to previous page', root_path %>
 </div>
 
-<%= link_to 'Return to previous page', root_path %>
-</div>
+
 
 <div class="category-cards d-flex flex-wrap">
   <% @list.bookmarks.each do |bookmark| %>
