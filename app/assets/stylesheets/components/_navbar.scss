@@ -1,17 +1,20 @@
-.navbar-lewagon {
+.navbar {
   justify-content: space-between;
-  background: white;
+  background-color: black;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.navbar-toggler {
+  border-color: white;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.navbar-toggler-icon {
+  background-color: white;
 }
 
-.nav_link {
-  text-decoration: none;
-  color: grey;
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-brand {
+  color: white;
 }
