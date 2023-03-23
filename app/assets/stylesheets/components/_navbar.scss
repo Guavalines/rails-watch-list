@@ -11,10 +11,20 @@
   background-color: white;
 }
 
+.navbar-nav {
+  margin-left: 50px;
+}
 .navbar-nav .nav-link {
   color: white;
+  font-size: small;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar-brand {
   color: white;
+}
+
+.bi {
+  size: 100px;
+  margin-left: 40px;
 }
