@@ -10,3 +10,9 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+
+body {
+  background-color: black;
+  color: white; /* optional: sets the text color to white */
+}

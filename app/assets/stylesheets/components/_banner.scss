@@ -21,3 +21,37 @@
   margin-bottom: 30px;
   padding: 20px;
 }
+
+
+.banner {
+  position: relative;
+  .background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .card-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    z-index: 1;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+      z-index: -1;
+    }
+  }
+}
