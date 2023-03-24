@@ -1,18 +1,16 @@
-<div class="container mt-5">
-  <div class="banner" style="position: relative;">
-    <h1 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1; color: white; font-size: 75px;"><%= @list.name %></h1>
-    <img src="<%= cl_image_path @list.photo.key %>" alt="list-image" width="75%" height="75%" class="background-image">
-    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 0;"></div>
-  </div>
 
-  <div class="banner-buttons">
-    <%= link_to "Add Bookmark", new_list_bookmark_path(@list), class: "btn btn-secondary addbookmark-button-addons" %>
-    <%= link_to "Back", root_path, class: "btn btn-secondary back-button-addons"%>
-  </div>
+<div class="banner" style="position: relative;">
+  <h1 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1; color: white; font-size: 75px;"><%= @list.name %></h1>
+  <img src="<%= cl_image_path @list.photo.key %>" alt="list-image" width="75%" height="75%" class="background-image">
+  <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 0;"></div>
 </div>
 
 
 <div class="container my-5">
+  <div class="banner-buttons">
+    <%= link_to "Add Bookmark", new_list_bookmark_path(@list), class: "btn btn-secondary addbookmark-button-addons" %>
+    <%= link_to "Back", root_path, class: "btn btn-secondary back-button-addons"%>
+  </div>
   <div class="category-cards d-flex flex-wrap">
     <% @list.bookmarks.each do |bookmark| %>
       <div class="flip-card m-2">
