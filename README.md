@@ -15,6 +15,8 @@ Watch List is a 3-model app with a many to many relationship (N:N), with bookmar
 
 ![Screen Shot 2023-03-25 at 12 48 45 AM](https://user-images.githubusercontent.com/100665876/227704798-6df8791b-f68a-4c38-ae3f-d8fd587a7605.jpeg)
 
+![Screen Shot 2023-03-25 at 12 48 52 AM](https://user-images.githubusercontent.com/100665876/227704876-b34c65bd-820b-477b-86eb-0233b898683a.jpeg)
+
 
 ## Initialize these before starting the app:
 
