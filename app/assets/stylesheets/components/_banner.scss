@@ -1,11 +1,4 @@
 
-  // .banner h1 {
-  //   color: white;
-  //   font-size: 40px;
-  //   margin-top: 300px;
-  //   margin-bottom: 0.5em;
-  // }
-
 #banner-title1 {
   color: white;
   font-size: 30px;
@@ -24,15 +17,21 @@
   color: white;
   font-size: 30px;
   margin-top: 0px;
-  margin-bottom: 0.5em;
+  margin-bottom: 50px;
 }
-
 
 .banner-buttons {
-  margin-top: 30px;
+  margin-top: 150px;
   margin-bottom: 30px;
-  // padding: 20px;
+  display: block;
+  margin: 0 auto;
 }
+
+button {
+  display: block;
+  margin-top: 0 auto;
+}
+
 
 
 .banner {
