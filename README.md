@@ -13,7 +13,8 @@ Watch List is a 3-model app with a many to many relationship (N:N), with bookmar
 - Parsing an API
 - Validations
 
-![Watchlist](https://user-images.githubusercontent.com/100665876/214724197-c85acf08-85c1-41eb-abe1-e1f34c84f8c0.jpeg)
+![Screen Shot 2023-03-25 at 12 48 45 AM](https://user-images.githubusercontent.com/100665876/227704798-6df8791b-f68a-4c38-ae3f-d8fd587a7605.jpeg)
+
 
 ## Initialize these before starting the app:
 
