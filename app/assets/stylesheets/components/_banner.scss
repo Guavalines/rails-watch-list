@@ -1,24 +1,25 @@
 
-#banner-title1 {
-  color: white;
-  font-size: 30px;
-  margin-top: 400px;
-  margin-bottom: 0.5em;
-}
+// #banner-title1 {
+//   color: white;
+//   font-size: 30px;
+//   margin-top: 400px;
+//   margin-bottom: 0.5em;
+// }
 
-#banner-title2 {
-  color: white;
-  font-size: 30px;
-  margin-top: 0px;
-  margin-bottom: 0.5em;
-}
+// #banner-title2 {
+//   color: white;
+//   font-size: 30px;
+//   margin-top: 0px;
+//   margin-bottom: 0.5em;
+// }
 
-#banner-title3 {
-  color: white;
-  font-size: 30px;
-  margin-top: 0px;
-  margin-bottom: 50px;
-}
+// #banner-title3 {
+//   color: white;
+//   font-size: 30px;
+//   margin-top: 0px;
+//   margin-bottom: 50px;
+// }
+
 
 .banner-buttons {
   margin-top: 150px;
@@ -30,6 +31,12 @@
 button {
   display: block;
   margin-top: 0 auto;
+}
+
+#banner-button {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  background-color: green;
 }
 
 
@@ -44,24 +51,29 @@ button {
   text-align: center;
   color: white;
   font-family: sans-serif;
+
   .background-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
+
   .card-img-overlay {
     position: absolute;
+    margin-top: 50px;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    // display: flex;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* update */
     align-items: center;
     color: white;
     font-size: 4rem;
     font-weight: bold;
     z-index: 1;
+
     &::before {
       content: "";
       position: absolute;
@@ -74,6 +86,8 @@ button {
     }
   }
 }
+
+
 
 .banner-title {
   display: block;

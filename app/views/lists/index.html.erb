@@ -1,14 +1,14 @@
 <div class="banner">
   <%= image_tag 'superman.jpg', alt: "Cinema", class: "background-image" %>
   <div class="card-img-overlay">
-    <h1 id="banner-title1">Note the films you've seen.</h1>
-    <h1 id="banner-title2">Save the best for later.</h1>
-    <h1 id="banner-title3">Share them with your friends.</h1>
+    <h1>Note the films you've seen.</h1>
+    <h1>Save the best for later.</h1>
+    <h1>Share them with your friends.</h1>
   </div>
 </div>
 
 <div class="container my-5">
-  <button type="button" class="btn btn-success mb-5 mt-5 banner-buttons" style="display: block; margin: 0 auto;">GET STARTED - IT'S FREE!</button>
+  <button type="button" id="banner-button" class="btn mb-5 mt-5 banner-buttons" style="display: block; margin: 0 auto;">GET STARTED - IT'S FREE!</button>
   <div class="main-container">
     <div class="list-cards">
       <% @lists.each do |list| %>
