@@ -7,7 +7,7 @@
 ## Description
 FLICKLIST is a film list sharing app with user rating system and content moderation. It is a 3-model app with a many to many relationship (N:N), with bookmarks as its join table.
 
-## Main Features
+## Features
 
 - Users can create their own custom categories.
 - Users can see their favorite categories and add their favorite movies from a Database (Using Movie API).
