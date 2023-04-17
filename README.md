@@ -1,9 +1,9 @@
 # FLICKLIST
 
-FLICKLIST is a 3-model app with a many to many relationship (N:N), with bookmarks as its join table.
+# [www.Flicklist.com](https://guarded-harbor-11071.herokuapp.com/)
 
-
-![Watch List Schema](https://user-images.githubusercontent.com/100665876/210877301-71272343-532e-42f7-8449-1af1b1e182fe.jpeg)
+## Description
+FLICKLIST is a film list sharing app with user rating system and content moderation. It is a 3-model app with a many to many relationship (N:N), with bookmarks as its join table.
 
 ## Main Features
 
@@ -12,6 +12,9 @@ FLICKLIST is a 3-model app with a many to many relationship (N:N), with bookmark
 - Users can create list of their favorite movies.
 - Parsing an API
 - Validations
+
+## DB schema
+![Watch List Schema](https://user-images.githubusercontent.com/100665876/210877301-71272343-532e-42f7-8449-1af1b1e182fe.jpeg)
 
 ![FlickList](https://user-images.githubusercontent.com/100665876/227837603-df7d6b80-291f-4584-abdc-f3ba18d3d456.jpeg)
 
