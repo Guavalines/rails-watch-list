@@ -16,6 +16,7 @@ FLICKLIST is a film list sharing app with user rating system and content moderat
 ## DB schema
 ![Watch List Schema](https://user-images.githubusercontent.com/100665876/210877301-71272343-532e-42f7-8449-1af1b1e182fe.jpeg)
 
+## Views
 ![FlickList](https://user-images.githubusercontent.com/100665876/227837603-df7d6b80-291f-4584-abdc-f3ba18d3d456.jpeg)
 
 ![Screen Shot 2023-03-25 at 12 48 52 AM](https://user-images.githubusercontent.com/100665876/227704876-b34c65bd-820b-477b-86eb-0233b898683a.jpeg)
