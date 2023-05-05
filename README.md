@@ -1,6 +1,6 @@
 ![Screen Shot 2023-04-17 at 2 02 27 AM](https://user-images.githubusercontent.com/100665876/232438415-dcc4d17f-2eef-468f-b466-ef309c69fbc3.jpeg)
 
-# [www.Flicklist.com](https://guarded-harbor-11071.herokuapp.com/)
+# [www.Flicklist.com](https://guarded-harbor-11071.herokuapp.com/) ☜ see it here
 
 ## Description
 FLICKLIST is a film list sharing app with user rating system and content moderation. It is a 3-model app with a many to many relationship (N:N), with bookmarks as its join table.
