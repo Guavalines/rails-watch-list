@@ -2,8 +2,8 @@
 
 # [www.Flicklist.com](https://guarded-harbor-11071.herokuapp.com/) ☜ see it here
 
-## 🎞️ Description
-FLICKLIST is a film list sharing app with user rating system and content moderation. It is a 3-model app with a many to many relationship (N:N), with bookmarks as its join table.
+## Description
+FLICKLIST is a film list sharing app with user rating system and content moderation. It is a 3-model app with a many to many relationship (N:N), with bookmarks as its join table. 🎞️ 
 
 ## Features
 
